@@ -1,0 +1,7 @@
+@memes.map do |meme|
+{
+  top_text: meme.top_text,
+  bottom_text: meme.bottom_text,
+  img_url: meme.img_url
+}
+end
