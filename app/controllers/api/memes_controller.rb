@@ -28,5 +28,14 @@ class Api::MemesController < ApplicationController
     )
     render 'show.json.jb'
   end
+
+  def destroy
+    @meme = Meme.find_by(id: params[:id])
+    @meme.destroy
+
+    render json: {message: "The meme has been sucessfully destroyed."}
+
+
+  end
   
 end
