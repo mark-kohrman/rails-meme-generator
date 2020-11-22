@@ -9,8 +9,5 @@ Rails.application.routes.draw do
     post "/memes" => "memes#create"
     patch "/memes/:id" => "memes#update"
     delete "/memes/:id" => "memes#destroy"
-
-
-
   end
 end
