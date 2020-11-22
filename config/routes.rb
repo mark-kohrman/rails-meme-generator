@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     get "/memes" => "memes#index"
     get "/memes/:id" => "memes#show"
     post "/memes" => "memes#create"
+    patch "/memes/:id" => "memes#update"
+
 
   end
 end
