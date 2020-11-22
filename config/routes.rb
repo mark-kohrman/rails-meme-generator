@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
     get "/memes" => "memes#index"
     get "/memes/:id" => "memes#show"
+    post "/memes" => "memes#create"
+
   end
 end
