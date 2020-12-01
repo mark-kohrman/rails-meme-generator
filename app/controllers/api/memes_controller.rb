@@ -10,6 +10,8 @@ class Api::MemesController < ApplicationController
   end
 
   def create
+    
+    puts params
     @meme = Meme.create(
       top_text: params[:top_text],
       bottom_text: params[:bottom_text],
